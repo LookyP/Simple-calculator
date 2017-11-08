@@ -1,5 +1,6 @@
 import math
 import sys
+import time
 def main():
     process = input("Input the process you would like to complete. multiply, divide, add, subtract, root, raise to power: ")
     if process == "add":
@@ -88,6 +89,8 @@ def again():
     if dec == 'yes':
         main()
     elif dec == 'no':
+        print("Exiting in three seconds")
+        time.sleep(3)
         sys.exit()
     else:
         print("invalid input. Type yes or no")
